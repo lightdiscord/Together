@@ -1,0 +1,7 @@
+{
+  "packages": [
+    "packages/@together/core",
+    "packages/@together-sites/stream"
+  ],
+  "version": "independent"
+}
