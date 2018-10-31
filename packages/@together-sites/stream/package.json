@@ -1,0 +1,36 @@
+{
+  "name": "@together-sites/stream",
+  "version": "0.0.1",
+  "description": "Stream site using together",
+  "keywords": [
+    "stream",
+    "together"
+  ],
+  "author": "LightDiscord <root@arnaud.sh>",
+  "homepage": "https://github.com/LightDiscord/Together",
+  "license": "MIT",
+  "main": "src/index.mjs",
+  "directories": {
+    "src": "src",
+    "test": "tests"
+  },
+  "files": [
+    "src"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@together/core": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LightDiscord/Together.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/LightDiscord/Together/issues"
+  }
+}

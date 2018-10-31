@@ -1,0 +1,32 @@
+{
+  "name": "@together/core",
+  "version": "0.0.1",
+  "description": "Useful functions used by together sites",
+  "keywords": [
+    "together"
+  ],
+  "author": "LightDiscord <root@arnaud.sh>",
+  "homepage": "https://github.com/LightDiscord/Together",
+  "license": "MIT",
+  "main": "src/index.mjs",
+  "directories": {
+    "src": "src",
+    "test": "tests"
+  },
+  "files": [
+    "src"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LightDiscord/Together.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/LightDiscord/Together/issues"
+  }
+}
