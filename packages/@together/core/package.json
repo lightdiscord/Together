@@ -8,7 +8,7 @@
   "author": "LightDiscord <root@arnaud.sh>",
   "homepage": "https://github.com/LightDiscord/Together",
   "license": "MIT",
-  "main": "src/index.mjs",
+  "main": "src/index.js",
   "directories": {
     "src": "src",
     "test": "tests"
@@ -24,9 +24,28 @@
     "url": "git+https://github.com/LightDiscord/Together.git"
   },
   "scripts": {
-    "test": "echo \"Error: run tests from root\" && exit 1"
+    "lint": "xo",
+    "test": "ava"
   },
   "bugs": {
     "url": "https://github.com/LightDiscord/Together/issues"
+  },
+  "devDependencies": {
+    "ava": "1.0.0-rc.1",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-react": "^7.11.1",
+    "xo": "^0.23.0"
+  },
+  "dependencies": {
+    "esm": "^3.0.84"
+  },
+  "xo": {
+    "extends": [
+      "eslint-config-airbnb"
+    ],
+    "rules": {
+      "import/prefer-default-export": false
+    }
   }
 }
