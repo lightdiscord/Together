@@ -1,3 +1,13 @@
-import { add } from '@together/core';
+import Vue from 'vue';
+import App from './App.vue';
+import router from './router';
+import store from './store';
+import './registerServiceWorker';
 
-console.log('5 + 4 = ', add(5)(4));
+Vue.config.productionTip = false;
+
+new Vue({
+  router,
+  store,
+  render: h => h(App),
+}).$mount('#app');
