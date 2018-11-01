@@ -5,8 +5,10 @@
     "lerna": "^3.4.3"
   },
   "scripts": {
+    "bootstrap": "lerna bootstrap",
     "test": "lerna run test",
     "lint": "lerna run lint",
-    "build": "lerna run build"
+    "build": "lerna run build",
+    "netlify": "npm run bootstrap && npm run build"
   }
 }
