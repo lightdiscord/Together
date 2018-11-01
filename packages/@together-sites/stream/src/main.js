@@ -1,13 +1,21 @@
 import Vue from 'vue';
 import App from './App.vue';
-import router from './router';
+import { Router } from './views';
 import store from './store';
-import './registerServiceWorker';
 
 Vue.config.productionTip = false;
 
-new Vue({
-  router,
+const register = (selector, component) => new Vue({
+  router: Router,
   store,
-  render: h => h(App),
-}).$mount('#app');
+  render: h => h(component),
+  el: selector,
+});
+
+register('#app', App);
+
+if (process.env.NODE_ENV === 'production') {
+  import('./service-worker').then(({ register }) => {
+    register();
+  });
+}
